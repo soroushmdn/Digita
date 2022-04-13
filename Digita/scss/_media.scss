@@ -1,0 +1,199 @@
+@media (max-width: 900px) {
+  //  @@@@@@@@@@@@  Header Section @@@@@@@@@@@@@
+  nav {
+    background: #EEEEEE;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .collapse {
+        background-color: #EEEEEE;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        transition: 0.8s ease-in-out;
+
+        max-height: 0px;
+        overflow: hidden;
+
+        & > :last-child {
+          padding-bottom: 1rem;
+        }
+      }
+      .toggle {
+        display: inherit;
+        color: #143f6b;
+        cursor: pointer;
+      }
+      .contact-button {
+        display: none;
+      }
+      .active {
+        max-height: 50vh;
+      }
+    }
+  }
+
+  //   @@@@@@@@@@@@  Agency Area @@@@@@@@@@@@@
+  #agency-area {
+    .grid-container {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+
+      .grid-item {
+        i {
+          font-size: 6rem;
+        }
+        h4 {
+          font-size: 1.5rem;
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+  //  @@@@@@@@@@@@  Digital Life Area @@@@@@@@@@@@@
+  #life-area {
+    .grid-container {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: unset;
+      .life-area-title {
+        text-align: center;
+        h2 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  //  @@@@@@@@@@@@  counting Area @@@@@@@@@@@@@
+
+  #counting-area {
+    .counting-area-grid {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 2rem;
+
+      .counting-area-title {
+        text-align: center;
+        h2 {
+          font-size: 2rem;
+          margin: 2rem 0;
+        }
+      }
+      .counting-area-box {
+        justify-self: center;
+        & > div {
+          padding: 1.5rem;
+
+          h3 {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  //  @@@@@@@@@@@@  Card Area @@@@@@@@@@@@@
+  #card-area {
+    .card-area-grid {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+
+      .card {
+        background: linear-gradient(to right, #82c2b7, #44ccb5);
+        padding: 5rem 4rem;
+
+        i {
+          font-size: 4rem;
+        }
+        h3 {
+          font-size: 1.5rem;
+          margin: 0.5rem 0 1rem;
+        }
+      }
+    }
+  }
+
+  //  @@@@@@@@@@@@  Article Area @@@@@@@@@@@@@
+  #article-area {
+    .article-grid {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 3rem;
+    }
+  }
+
+  //  @@@@@@@@@@@@  Ready Area @@@@@@@@@@@@@
+  #ready-area {
+    .ready-flex {
+      padding: 3rem;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      div {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .section-title {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #banner-area {
+    img {
+      filter: blur(3px);
+    }
+  }
+
+  footer {
+    .footer-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  // @@@@@@@@@@@@  Banner Area @@@@@@@@@@@@@
+  #banner-area {
+    .container {
+      align-items: center;
+      .banner-title {
+        text-align: center;
+
+        h1 {
+          font-size: 2rem;
+          color: #fff;
+        }
+        p {
+          margin: 1.3rem 0;
+          color: #fff;
+        }
+      }
+    }
+  }
+  // @@@@@@@@@@@@  Footer @@@@@@@@@@@@@
+  footer {
+    .footer-grid {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      text-align: center;
+
+      .footer-box {
+        &:last-child {
+          div {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
